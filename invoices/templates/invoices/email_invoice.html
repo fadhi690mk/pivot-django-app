@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ invoice.invoice_number }} – {{ company.name }}</title>
+  <style>
+    @media print {
+      body, html { background: #fff !important; margin: 0 !important; padding: 0 !important; }
+      .invoice-wrap { box-shadow: none !important; }
+      .no-print { display: none !important; }
+      .print-doc { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#f8fafc; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;">
+  {% if for_download %}
+  <script>window.onload = function() { window.print(); };</script>
+  {% endif %}
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f8fafc;">
+    <tr>
+      <td style="padding:32px 24px;">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" class="print-doc invoice-wrap" style="max-width:640px; margin:0 auto; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.08); border:1px solid #e2e8f0;">
+          <!-- Header: company + doc -->
+          <tr>
+            <td style="padding:28px 32px 20px 32px; border-bottom:1px solid #e2e8f0;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="vertical-align:top;">
+                    <p style="margin:0; font-size:20px; font-weight:700; color:#0f172a;">{{ company.name }}</p>
+                    {% if company.tagline %}<p style="margin:4px 0 0 0; font-size:13px; color:#64748b;">{{ company.tagline }}</p>{% endif %}
+                    {% if company.email or company.phone %}<p style="margin:6px 0 0 0; font-size:12px; color:#94a3b8;">{% if company.email %}{{ company.email }}{% endif %}{% if company.phone %} · {{ company.phone }}{% endif %}</p>{% endif %}
+                  </td>
+                  <td style="vertical-align:top; text-align:right;">
+                    <p style="margin:0; font-size:18px; font-weight:700; color:#0f172a;">{{ invoice.invoice_number }}</p>
+                    <p style="margin:4px 0 0 0; font-size:12px; color:#64748b; text-transform:capitalize;">{{ invoice.get_type_display }}</p>
+                    <span style="display:inline-block; margin-top:8px; padding:4px 10px; border-radius:6px; font-size:11px; font-weight:600; text-transform:capitalize; {% if invoice.type == 'receipt' %}background:#dcfce7; color:#166534;{% else %}background:#dbeafe; color:#1e40af;{% endif %}">{{ invoice.get_type_display }}</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Client & dates -->
+          <tr>
+            <td style="padding:20px 32px; background:#fafafa; border-bottom:1px solid #e2e8f0;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="width:50%; vertical-align:top;">
+                    <p style="margin:0; font-size:11px; color:#94a3b8; text-transform:uppercase; letter-spacing:0.04em;">Bill to</p>
+                    <p style="margin:4px 0 0 0; font-size:15px; font-weight:600; color:#0f172a;">{{ invoice.client_name }}</p>
+                    <p style="margin:2px 0 0 0; font-size:13px; color:#64748b;">{{ invoice.client_email }}</p>
+                  </td>
+                  <td style="width:50%; vertical-align:top; text-align:right;">
+                    <p style="margin:0; font-size:11px; color:#94a3b8; text-transform:uppercase; letter-spacing:0.04em;">Dates</p>
+                    <p style="margin:4px 0 0 0; font-size:14px; font-weight:600; color:#0f172a;">Issued {{ invoice.issued_date }}</p>
+                    {% if invoice.due_date %}<p style="margin:2px 0 0 0; font-size:13px; color:#64748b;">Due {{ invoice.due_date }}</p>{% endif %}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Line items -->
+          <tr>
+            <td style="padding:24px 32px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+                <thead>
+                  <tr>
+                    <th style="padding:10px 0; font-size:11px; font-weight:600; color:#64748b; text-transform:uppercase; letter-spacing:0.04em; text-align:left; border-bottom:1px solid #e2e8f0;">Description</th>
+                    <th style="padding:10px 12px; font-size:11px; font-weight:600; color:#64748b; text-transform:uppercase; letter-spacing:0.04em; text-align:right; border-bottom:1px solid #e2e8f0;">Qty</th>
+                    <th style="padding:10px 12px; font-size:11px; font-weight:600; color:#64748b; text-transform:uppercase; letter-spacing:0.04em; text-align:right; border-bottom:1px solid #e2e8f0;">Price</th>
+                    <th style="padding:10px 0 10px 12px; font-size:11px; font-weight:600; color:#64748b; text-transform:uppercase; letter-spacing:0.04em; text-align:right; border-bottom:1px solid #e2e8f0;">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for item in items %}
+                  <tr>
+                    <td style="padding:12px 0; font-size:14px; color:#334155; border-bottom:1px solid #f1f5f9;">{{ item.description }}</td>
+                    <td style="padding:12px 12px; font-size:14px; color:#64748b; text-align:right; border-bottom:1px solid #f1f5f9;">{{ item.qty }}</td>
+                    <td style="padding:12px 12px; font-size:14px; color:#64748b; text-align:right; border-bottom:1px solid #f1f5f9;">{{ item.unit_price|floatformat:2 }} AED</td>
+                    <td style="padding:12px 0 12px 12px; font-size:14px; font-weight:600; color:#0f172a; text-align:right; border-bottom:1px solid #f1f5f9;">{{ item.line_total|floatformat:2 }} AED</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <!-- Totals -->
+          <tr>
+            <td style="padding:0 32px 24px 32px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="width:55%;"></td>
+                  <td style="width:45%;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td style="padding:6px 0; font-size:14px; color:#64748b;">Subtotal</td>
+                        <td style="padding:6px 0; font-size:14px; color:#334155; text-align:right;">{{ invoice.subtotal|floatformat:2 }} AED</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:6px 0; font-size:14px; color:#64748b;">VAT (5%)</td>
+                        <td style="padding:6px 0; font-size:14px; color:#334155; text-align:right;">{{ invoice.vat|floatformat:2 }} AED</td>
+                      </tr>
+                      <tr>
+                        <td style="padding:14px 0 6px 0; font-size:16px; font-weight:700; color:#0f172a;">Total</td>
+                        <td style="padding:14px 0 6px 0; font-size:18px; font-weight:700; color:#0f172a; text-align:right;">{{ invoice.total|floatformat:2 }} AED</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          {% if invoice.notes %}
+          <tr>
+            <td style="padding:0 32px 24px 32px;">
+              <p style="margin:0; font-size:12px; color:#64748b; line-height:1.5;"><strong style="color:#475569;">Notes:</strong> {{ invoice.notes }}</p>
+            </td>
+          </tr>
+          {% endif %}
+          <!-- Footer -->
+          <tr>
+            <td style="padding:20px 32px; background:#f8fafc; border-top:1px solid #e2e8f0;">
+              <p style="margin:0; font-size:13px; color:#64748b;">Thank you for your business.</p>
+              <p style="margin:6px 0 0 0; font-size:14px; font-weight:600; color:#0f172a;">{{ company.name }}</p>
+              {% if company.address %}<p style="margin:2px 0 0 0; font-size:12px; color:#64748b;">{{ company.address }}</p>{% endif %}
+              {% if company.email or company.phone %}<p style="margin:2px 0 0 0; font-size:12px; color:#64748b;">{% if company.email %}{{ company.email }}{% endif %}{% if company.phone %} · {{ company.phone }}{% endif %}</p>{% endif %}
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
