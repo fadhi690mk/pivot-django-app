@@ -203,3 +203,103 @@ def role_detail(request, pk):
 
 
 role_detail.required_permissions = {"GET": "config.roles", "PATCH": "config.roles", "DELETE": "config.roles"}
+
+
+@api_view(["POST"])
+@permission_classes([IsAuthenticated, HasHubPermission])
+def send_reset_link(request):
+    """Send password reset link to a hub user by email. Requires cms.team.edit."""
+    send_reset_link.required_permissions = {"POST": "cms.team.edit"}
+    email = (request.data.get("email") or "").strip()
+    if not email:
+        return Response({"detail": "email is required."}, status=status.HTTP_400_BAD_REQUEST)
+    user = HubUser.objects.filter(email__iexact=email, is_deleted=False).first()
+    if not user:
+        return Response({"detail": "No hub user found with this email."}, status=status.HTTP_404_NOT_FOUND)
+    from django.contrib.auth.tokens import default_token_generator
+    from django.core.mail import send_mail
+    from django.conf import settings
+    from django.utils.http import urlsafe_base64_encode
+    from django.utils.encoding import force_bytes
+
+    token = default_token_generator.make_token(user)
+    uid = urlsafe_base64_encode(force_bytes(str(user.pk)))
+    frontend_url = getattr(settings, "FRONTEND_URL", None) or request.build_absolute_uri("/").rstrip("/")
+    reset_url = f"{frontend_url}/set-password?uid={uid}&token={token}"
+    subject = "Reset your Hub password"
+    message = f"Hello {user.name},\n\nYou requested a password reset for the Management Hub.\n\nSet a new password here: {reset_url}\n\nIf you did not request this, ignore this email.\n\n— Al Awamer"
+    try:
+        send_mail(
+            subject,
+            message,
+            settings.DEFAULT_FROM_EMAIL,
+            [user.email],
+            fail_silently=False,
+        )
+    except Exception as e:
+        return Response({"detail": f"Failed to send email: {str(e)}"}, status=status.HTTP_503_SERVICE_UNAVAILABLE)
+    return Response({"detail": "Reset link sent."}, status=status.HTTP_200_OK)
+
+
+@api_view(["POST"])
+@permission_classes([IsAuthenticated, HasHubPermission])
+def send_invite(request):
+    """Send invite (set-password link) to a hub user by user_id. Requires cms.team.edit."""
+    send_invite.required_permissions = {"POST": "cms.team.edit"}
+    user_id = request.data.get("user_id")
+    if not user_id:
+        return Response({"detail": "user_id is required."}, status=status.HTTP_400_BAD_REQUEST)
+    try:
+        user = HubUser.objects.get(pk=user_id, is_deleted=False)
+    except (HubUser.DoesNotExist, ValueError):
+        return Response({"detail": "User not found."}, status=status.HTTP_404_NOT_FOUND)
+    from django.contrib.auth.tokens import default_token_generator
+    from django.core.mail import send_mail
+    from django.conf import settings
+    from django.utils.http import urlsafe_base64_encode
+    from django.utils.encoding import force_bytes
+
+    token = default_token_generator.make_token(user)
+    uid = urlsafe_base64_encode(force_bytes(str(user.pk)))
+    frontend_url = getattr(settings, "FRONTEND_URL", None) or request.build_absolute_uri("/").rstrip("/")
+    invite_url = f"{frontend_url}/set-password?uid={uid}&token={token}"
+    subject = "You're invited to the Management Hub"
+    message = f"Hello {user.name},\n\nYou have been invited to the Management Hub.\n\nSet your password here: {invite_url}\n\n— Al Awamer"
+    try:
+        send_mail(
+            subject,
+            message,
+            settings.DEFAULT_FROM_EMAIL,
+            [user.email],
+            fail_silently=False,
+        )
+    except Exception as e:
+        return Response({"detail": f"Failed to send email: {str(e)}"}, status=status.HTTP_503_SERVICE_UNAVAILABLE)
+    return Response({"detail": "Invite sent."}, status=status.HTTP_200_OK)
+
+
+@api_view(["POST"])
+@permission_classes([AllowAny])
+def confirm_reset(request):
+    """Set new password from reset/invite link. Body: uid (base64), token, new_password."""
+    uid = request.data.get("uid")
+    token = request.data.get("token")
+    new_password = (request.data.get("new_password") or "").strip()
+    if not uid or not token:
+        return Response({"detail": "uid and token are required."}, status=status.HTTP_400_BAD_REQUEST)
+    if not new_password or len(new_password) < 8:
+        return Response({"detail": "new_password must be at least 8 characters."}, status=status.HTTP_400_BAD_REQUEST)
+    from django.contrib.auth.tokens import default_token_generator
+    from django.utils.http import urlsafe_base64_decode
+    from django.utils.encoding import force_str
+
+    try:
+        pk = force_str(urlsafe_base64_decode(uid))
+        user = HubUser.objects.get(pk=pk, is_deleted=False)
+    except (TypeError, ValueError, OverflowError, HubUser.DoesNotExist):
+        return Response({"detail": "Invalid or expired link."}, status=status.HTTP_400_BAD_REQUEST)
+    if not default_token_generator.check_token(user, token):
+        return Response({"detail": "Invalid or expired link."}, status=status.HTTP_400_BAD_REQUEST)
+    user.set_password(new_password)
+    user.save(update_fields=["password"])
+    return Response({"detail": "Password set. You can now log in."}, status=status.HTTP_200_OK)

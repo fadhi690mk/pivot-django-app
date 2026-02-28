@@ -12,4 +12,7 @@ urlpatterns = [
     path("users/", views.user_list),
     path("roles/", views.role_list),
     path("roles/<uuid:pk>/", views.role_detail),
+    path("send-reset-link/", views.send_reset_link),
+    path("send-invite/", views.send_invite),
+    path("confirm-reset/", views.confirm_reset),
 ]
