@@ -34,6 +34,11 @@ FEATURES_CHOICES = [
     ("invoices.delete", "Delete Invoices"),
     ("audit.view", "View Audit Log"),
     ("settings.manage", "Manage Settings"),
+    ("cms.formations.view", "View Formations"),
+    ("cms.formations.create", "Create Formations"),
+    ("cms.formations.edit", "Edit Formations"),
+    ("cms.formations.publish", "Publish Formations"),
+    ("cms.formations.delete", "Delete Formations"),
 ]
 
 

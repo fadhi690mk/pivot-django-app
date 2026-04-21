@@ -121,6 +121,11 @@ class FAQ(MarketingBaseModel):
 
 # ----- Service (parent) -----
 class Service(MarketingBaseModel):
+    SERVICE_TYPE_CHOICES = [
+        ("service", "Service"),
+        ("company_formation", "Company Formation"),
+    ]
+    service_type = models.CharField(max_length=20, choices=SERVICE_TYPE_CHOICES, default="service")
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=100, unique=True, blank=True)
     short_title = models.CharField(max_length=100, blank=True, default="")
@@ -273,6 +278,8 @@ class SubService(MarketingBaseModel):
             )
         super().save(*args, **kwargs)
 
+    def __str__(self):
+        return f"{self.parent_service.title} - {self.title}"
 
 class SubServiceEligibility(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

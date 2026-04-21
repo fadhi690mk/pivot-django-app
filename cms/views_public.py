@@ -63,6 +63,9 @@ def service_list(request):
         )
         .order_by("sort_order")
     )
+    service_type = request.query_params.get("service_type")
+    if service_type:
+        qs = qs.filter(service_type=service_type)
     return Response({"results": ServiceListSerializer(qs, many=True).data})
 
 

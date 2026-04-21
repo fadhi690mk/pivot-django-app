@@ -343,6 +343,7 @@ def hub_service_list(request):
         with transaction.atomic():
             service = Service.objects.create(
                 title=(data.get("title") or "")[:255],
+                service_type=(data.get("service_type") or "service")[:20],
                 slug=slug or "",
                 short_title=(data.get("short_title") or data.get("title") or "")[:100],
                 tagline=(data.get("tagline") or "")[:255],
@@ -381,6 +382,12 @@ def hub_service_list(request):
             queryset=SubService.objects.filter(is_deleted=False).order_by("sort_order"),
         )
     )
+    # get service_type from query params
+    service_type = request.query_params.get("service_type")
+
+    if service_type:
+        qs = qs.filter(service_type=service_type)
+
     return Response({"results": ServiceListSerializer(qs, many=True).data})
 
 
@@ -404,7 +411,7 @@ def hub_service_detail(request, slug):
         data = request.data
         with transaction.atomic():
             for attr in ("title", "slug", "short_title", "tagline", "description", "long_description",
-                         "category", "starting_price", "timeline", "status", "offer_badge", "sort_order", "icon"):
+                         "category", "starting_price", "timeline", "status", "offer_badge", "sort_order", "icon", "service_type"):
                 if data.get(attr) is not None:
                     val = data[attr]
                     if attr == "sort_order":
@@ -417,6 +424,8 @@ def hub_service_detail(request, slug):
                         val = (val or "")[:255] if attr != "short_title" else (val or "")[:100]
                     elif attr == "slug":
                         val = (val or "")[:100]
+                    elif attr == "service_type":
+                        val = (val or "service")[:20]
                     elif attr in ("category", "status"):
                         val = (val or "")[:20] if attr == "category" else (val or "published")[:15]
                     elif attr in ("starting_price", "timeline", "offer_badge"):
