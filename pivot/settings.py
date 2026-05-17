@@ -1,5 +1,5 @@
 """
-Django settings for awamer project.
+Django settings for pivot project.
 """
 import os
 from pathlib import Path
@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-dev-key-change-in-production")
 DEBUG = os.environ.get("DEBUG", "True").lower() in ("1", "true", "yes")
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="localhost,127.0.0.1,187.77.189.11").split(",")
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="localhost,127.0.0.1,api.pivot-travels.com,pivot-travels.com").split(",")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -44,7 +44,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "awamer.urls"
+ROOT_URLCONF = "pivot.urls"
 AUTH_USER_MODEL = "accounts.HubUser"
 
 TEMPLATES = [
@@ -62,7 +62,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "awamer.wsgi.application"
+WSGI_APPLICATION = "pivot.wsgi.application"
 
 # Use PostgreSQL when DB_NAME is set in .env; otherwise SQLite (e.g. for dumping before migration)
 if config("DB_NAME", default=""):
@@ -70,7 +70,7 @@ if config("DB_NAME", default=""):
         "default": {
             "ENGINE": "django.db.backends.postgresql",
             "NAME": config("DB_NAME"),
-            "USER": config("DB_USER", default="awamer"),
+            "USER": config("DB_USER", default="pivot"),
             "PASSWORD": config("DB_PASSWORD", default=""),
             "HOST": config("DB_HOST", default="localhost"),
             "PORT": config("DB_PORT", default="5432"),
@@ -108,7 +108,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-        "LOCATION": "awamer-default",
+        "LOCATION": "pivot-default",
     }
 }
 

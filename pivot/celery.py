@@ -1,12 +1,12 @@
 """
-Celery app for awamer project. Used for mail queue (13s gap between emails).
+Celery app for pivot project. Used for mail queue (13s gap between emails).
 """
 import os
 from celery import Celery
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "awamer.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pivot.settings")
 
-app = Celery("awamer")
+app = Celery("pivot")
 app.config_from_object("django.conf:settings", namespace="CELERY")
 app.autodiscover_tasks()
 
