@@ -10,7 +10,7 @@ from .models import Lead, LeadNote
 from .serializers import LeadListSerializer, LeadDetailSerializer, LeadCreatePublicSerializer, LeadNoteSerializer
 from .id_generator import generate_lead_id
 from audit.utils import log_audit
-from awamer.firebase_fcm import send_lead_notification
+from pivot.firebase_fcm import send_lead_notification
 
 
 class LeadPagination(PageNumberPagination):
