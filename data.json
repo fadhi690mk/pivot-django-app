@@ -1,0 +1,1937 @@
+[
+  {
+    "model": "cms.service",
+    "pk": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+    "fields": {
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z",
+      "is_deleted": false,
+      "title": "Digital Solutions",
+      "slug": "digital-solutions",
+      "short_title": "Digital Solutions",
+      "tagline": "Empowering Businesses Through Innovation",
+      "description": "Comprehensive digital transformation services for modern enterprises.",
+      "long_description": "Our Digital Solutions suite provides end-to-end technology services ranging from web development to cloud infrastructure, designed to scale your business operations effectively.",
+      "hero_image": null,
+      "category": "general",
+      "starting_price": 599.0,
+      "offer_badge": "Limited Offer",
+      "timeline": "Ongoing",
+      "team_lead": null,
+      "status": "draft",
+      "sort_order": 0,
+      "related_services": [],
+      "icon": "desktop",
+      "meta_title": "Digital Solutions | Expert Technology Services",
+      "meta_description": "Transform your business with our professional digital solutions including web, mobile, and cloud services.",
+      "meta_keywords": "digital solutions, web development, mobile apps, it consulting",
+      "focus_keyword": "digital solutions",
+      "og_title": null,
+      "og_image": null,
+      "canonical_url": null,
+      "schema_markup": null,
+      "priority": 0
+    }
+  },
+  {
+    "model": "cms.servicebenefit",
+    "pk": "b1c2d3e4-f5a6-4789-8b90-123456789001",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Enhanced Brand Visibility"
+    }
+  },
+  {
+    "model": "cms.servicebenefit",
+    "pk": "b1c2d3e4-f5a6-4789-8b90-123456789002",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Streamlined Business Operations"
+    }
+  },
+  {
+    "model": "cms.servicebenefit",
+    "pk": "b1c2d3e4-f5a6-4789-8b90-123456789003",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Increased Operational Efficiency"
+    }
+  },
+  {
+    "model": "cms.servicebenefit",
+    "pk": "b1c2d3e4-f5a6-4789-8b90-123456789004",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Scalable Infrastructure Support"
+    }
+  },
+  {
+    "model": "cms.servicebenefit",
+    "pk": "b1c2d3e4-f5a6-4789-8b90-123456789005",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Competitive Market Edge"
+    }
+  },
+  {
+    "model": "cms.servicedocument",
+    "pk": "c1d2e3f4-a5b6-4789-8b90-123456789001",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Business License"
+    }
+  },
+  {
+    "model": "cms.servicedocument",
+    "pk": "c1d2e3f4-a5b6-4789-8b90-123456789002",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Stakeholder ID Proofs"
+    }
+  },
+  {
+    "model": "cms.servicedocument",
+    "pk": "c1d2e3f4-a5b6-4789-8b90-123456789003",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Existing Domain Credentials"
+    }
+  },
+  {
+    "model": "cms.servicedocument",
+    "pk": "c1d2e3f4-a5b6-4789-8b90-123456789004",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Company Logo Assets"
+    }
+  },
+  {
+    "model": "cms.servicedocument",
+    "pk": "c1d2e3f4-a5b6-4789-8b90-123456789005",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Project Brief Document"
+    }
+  },
+  {
+    "model": "cms.serviceprocessstep",
+    "pk": "d1e2f3a4-b5c6-4789-8b90-123456789001",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "step_number": 1,
+      "title": "Initial Consultation",
+      "description": "Understanding client requirements and goals.",
+      "timeline": "Day 1-2"
+    }
+  },
+  {
+    "model": "cms.serviceprocessstep",
+    "pk": "d1e2f3a4-b5c6-4789-8b90-123456789002",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "step_number": 2,
+      "title": "Strategic Planning",
+      "description": "Developing a roadmap for digital implementation.",
+      "timeline": "Day 3-5"
+    }
+  },
+  {
+    "model": "cms.serviceprocessstep",
+    "pk": "d1e2f3a4-b5c6-4789-8b90-123456789003",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "step_number": 3,
+      "title": "Design & Prototyping",
+      "description": "Visualizing the solution through wireframes.",
+      "timeline": "Week 2"
+    }
+  },
+  {
+    "model": "cms.serviceprocessstep",
+    "pk": "d1e2f3a4-b5c6-4789-8b90-123456789004",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "step_number": 4,
+      "title": "Development",
+      "description": "Coding and building the digital asset.",
+      "timeline": "Week 3-6"
+    }
+  },
+  {
+    "model": "cms.serviceprocessstep",
+    "pk": "d1e2f3a4-b5c6-4789-8b90-123456789005",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "step_number": 5,
+      "title": "Deployment",
+      "description": "Final testing and live launch.",
+      "timeline": "Week 7"
+    }
+  },
+  {
+    "model": "cms.servicepricetier",
+    "pk": "e1f2a3b4-c5d6-4789-8b90-123456789001",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "name": "Starter Pack",
+      "price": "599.00",
+      "description": "Basic digital presence for small businesses.",
+      "is_popular": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789001",
+      "text": "1 Landing Page"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789001",
+      "text": "Mobile Responsive"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789001",
+      "text": "Basic SEO Setup"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789001",
+      "text": "Contact Form"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789001",
+      "text": "Email Support"
+    }
+  },
+  {
+    "model": "cms.servicepricetier",
+    "pk": "e1f2a3b4-c5d6-4789-8b90-123456789002",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "name": "Professional Plus",
+      "price": "1499.00",
+      "description": "Full featured digital solution.",
+      "is_popular": true,
+      "sort_order": 1
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789002",
+      "text": "Multi-page Website"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789002",
+      "text": "CMS Integration"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789002",
+      "text": "Advanced Analytics"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789002",
+      "text": "Social Media Sync"
+    }
+  },
+  {
+    "model": "cms.pricetierfeature",
+    "pk": "f1a2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "price_tier": "e1f2a3b4-c5d6-4789-8b90-123456789002",
+      "text": "24/7 Priority Support"
+    }
+  },
+  {
+    "model": "cms.servicefaq",
+    "pk": "01a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "question": "What digital solutions do you offer?",
+      "answer": "We offer web development, mobile apps, software solutions, cloud hosting, and IT consulting."
+    }
+  },
+  {
+    "model": "cms.servicefaq",
+    "pk": "01a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "question": "How long does a typical project take?",
+      "answer": "Timelines vary from 2 weeks for simple websites to 3-6 months for complex software."
+    }
+  },
+  {
+    "model": "cms.servicefaq",
+    "pk": "01a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "question": "Do you provide maintenance?",
+      "answer": "Yes, we offer ongoing support and maintenance packages for all our digital products."
+    }
+  },
+  {
+    "model": "cms.servicefaq",
+    "pk": "01a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "question": "Is custom development available?",
+      "answer": "Absolutely, we specialize in building custom solutions tailored to specific business needs."
+    }
+  },
+  {
+    "model": "cms.servicefaq",
+    "pk": "01a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "question": "Are the prices fixed?",
+      "answer": "Starting prices are mentioned; final quotes depend on the complexity of your requirements."
+    }
+  },
+  {
+    "model": "cms.servicedeliverable",
+    "pk": "11a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Source Code Access"
+    }
+  },
+  {
+    "model": "cms.servicedeliverable",
+    "pk": "11a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Technical Documentation"
+    }
+  },
+  {
+    "model": "cms.servicedeliverable",
+    "pk": "11a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "User Manuals"
+    }
+  },
+  {
+    "model": "cms.servicedeliverable",
+    "pk": "11a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Deployment Report"
+    }
+  },
+  {
+    "model": "cms.servicedeliverable",
+    "pk": "11a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "text": "Admin Training Session"
+    }
+  },
+  {
+    "model": "cms.subservice",
+    "pk": "777e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z",
+      "is_deleted": false,
+      "parent_service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "title": "Website Development",
+      "slug": "website-development",
+      "tagline": "Modern & Responsive Websites",
+      "description": "High-performance web development services.",
+      "long_description": "We build websites that convert visitors into customers using the latest technologies and responsive design principles.",
+      "hero_image": null,
+      "starting_price": 599.0,
+      "offer_badge": "",
+      "timeline": "2-4 Weeks",
+      "team_lead": null,
+      "status": "draft",
+      "sort_order": 0,
+      "meta_title": "Website Development | Build Your Presence",
+      "meta_description": "Custom website design and development services starting from SAR 599.",
+      "meta_keywords": "website development, custom design, ecommerce",
+      "focus_keyword": "website development",
+      "og_title": null,
+      "og_image": null,
+      "canonical_url": null,
+      "schema_markup": null,
+      "priority": 0
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "SEO Friendly Architecture"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Blazing Fast Load Speed"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Secure Codebase"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Mobile Responsive Design"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Easy to Manage CMS"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Domain Name Details"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Content/Copywriting Assets"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Hosting Credentials"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "High Res Logos"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Design Guidelines"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstep",
+    "pk": "44a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "step_number": 1,
+      "title": "Wireframing",
+      "description": "Creating structural layouts.",
+      "timeline": "3 Days"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "Design Brief"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "Competitor Analysis"
+    }
+  },
+  {
+    "model": "cms.subservicepricetier",
+    "pk": "55a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "name": "Single Page",
+      "price": "599.00",
+      "description": "Perfect for portfolios.",
+      "is_popular": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "Single Page Design"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "Standard SEO"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "SSL Certificate"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "Speed Optimization"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789001",
+      "text": "1 Month Support"
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "question": "Is hosting included?",
+      "answer": "Hosting is separate but we assist with the setup process."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "question": "Will my site be mobile friendly?",
+      "answer": "Yes, all our websites are built with a mobile-first responsive approach."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "question": "Can I update the content myself?",
+      "answer": "Yes, we integrate easy-to-use CMS platforms like WordPress or custom Dashboards."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "question": "Do you provide business emails?",
+      "answer": "Yes, we can help set up G-Suite or professional mail servers."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "question": "Is the SAR 599 price one-time?",
+      "answer": "Yes, it is the one-time development fee for the starter package."
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Live Website URL"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Admin Credentials"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Full Backup Files"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "SEO Completion Report"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Final Design Assets"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789001",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Registered Business Entity"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Valid Domain Ownership"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Cleared Intellectual Property Rights"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Initial Project Deposit Paid"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440001",
+      "text": "Approved Content Strategy"
+    }
+  }
+,
+  {
+    "model": "cms.subservice",
+    "pk": "777e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z",
+      "is_deleted": false,
+      "parent_service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "title": "Mobile App Development",
+      "slug": "mobile-app-development",
+      "tagline": "Innovative Apps for iOS & Android",
+      "description": "Custom mobile application development starting from SAR 1,999.",
+      "long_description": "We specialize in building high-performance native and cross-platform mobile applications with seamless UI/UX and robust backend integration.",
+      "hero_image": null,
+      "starting_price": 1999.0,
+      "offer_badge": "",
+      "timeline": "8-12 Weeks",
+      "team_lead": null,
+      "status": "draft",
+      "sort_order": 1,
+      "meta_title": "Mobile App Development | Android & iOS Solutions",
+      "meta_description": "Expert mobile app development in UAE. iOS, Android, and Cross-Platform apps starting from SAR 1,999.",
+      "meta_keywords": "mobile app, android app, ios app, app development",
+      "focus_keyword": "mobile app development",
+      "og_title": null,
+      "og_image": null,
+      "canonical_url": null,
+      "schema_markup": null,
+      "priority": 0
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Cross-Platform Compatibility"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Intuitive User Experience"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Push Notification Integration"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Scalable Cloud Backend"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Secure Payment Gateways"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "App Store Developer Accounts"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "UI Design Guidelines"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Privacy Policy"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Terms of Service"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Third-party API Keys"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstep",
+    "pk": "44a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "step_number": 1,
+      "title": "Discovery Phase",
+      "description": "Requirement gathering and market research.",
+      "timeline": "1 Week"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789006",
+      "text": "Product Roadmap"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789006",
+      "text": "Feature List"
+    }
+  },
+  {
+    "model": "cms.subservicepricetier",
+    "pk": "55a2b3c4-d5e6-4789-8b90-123456789002",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "name": "MVP Build",
+      "price": "1999.00",
+      "description": "Core features for market testing.",
+      "is_popular": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789002",
+      "text": "Hybrid Development"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789002",
+      "text": "Up to 5 Screens"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789002",
+      "text": "Email Auth"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789002",
+      "text": "Store Submission"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789002",
+      "text": "Basic Bug Support"
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "question": "Do you develop for both iOS and Android?",
+      "answer": "Yes, we build native apps for both or use Flutter for cross-platform solutions."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "question": "Will you upload the app to the store?",
+      "answer": "Yes, we handle the entire submission process for Apple App Store and Google Play Store."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "question": "Can I integrate third-party APIs?",
+      "answer": "Absolutely, we can integrate payments, social logins, maps, and more."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "question": "Who owns the source code?",
+      "answer": "The client retains 100% ownership of the source code upon project completion."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "question": "Do you provide app updates?",
+      "answer": "Yes, we offer maintenance contracts for regular updates and OS compatibility."
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "App IPA/APK Files"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Complete Source Code"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "API Documentation"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Admin Control Panel"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Testing & QA Report"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Verified Developer Accounts"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Functional Requirements Doc"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Clear Branding Assets"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Service Level Agreement"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440002",
+      "text": "Legal Compliance Clearances"
+    }
+  },
+  {
+    "model": "cms.subservice",
+    "pk": "777e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z",
+      "is_deleted": false,
+      "parent_service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "title": "Business Software Solutions",
+      "slug": "business-software-solutions",
+      "tagline": "Tailored ERP & CRM Systems",
+      "description": "Optimize operations with custom software starting from SAR 999.",
+      "long_description": "We build scalable software solutions like ERP, CRM, and Inventory management to automate your business workflows.",
+      "hero_image": null,
+      "starting_price": 999.0,
+      "offer_badge": "",
+      "timeline": "6-10 Weeks",
+      "team_lead": null,
+      "status": "draft",
+      "sort_order": 2,
+      "meta_title": "Business Software | ERP & CRM Solutions",
+      "meta_description": "Custom business software solutions for automation and management starting from SAR 999.",
+      "meta_keywords": "ERP, CRM, inventory management, custom software",
+      "focus_keyword": "business software solutions",
+      "og_title": null,
+      "og_image": null,
+      "canonical_url": null,
+      "schema_markup": null,
+      "priority": 0
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789011",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Automated Workflows"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789012",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Real-time Reporting"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789013",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Centralized Data Storage"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789014",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Multi-user Role Access"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789015",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Seamless Third-party Integration"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789011",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Process Workflow Maps"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789012",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Data Migration Sheets"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789013",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Regulatory Guidelines"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789014",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "User Role Permission List"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789015",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Existing DB Schema"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstep",
+    "pk": "44a2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "step_number": 1,
+      "title": "System Audit",
+      "description": "Analyzing current business processes.",
+      "timeline": "2 Weeks"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789007",
+      "text": "Gap Analysis"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789006",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789007",
+      "text": "Requirement Spec"
+    }
+  },
+  {
+    "model": "cms.subservicepricetier",
+    "pk": "55a2b3c4-d5e6-4789-8b90-123456789003",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "name": "SME Suite",
+      "price": "999.00",
+      "description": "Essential automation tools.",
+      "is_popular": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789011",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789003",
+      "text": "Custom CRM"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789012",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789003",
+      "text": "Inventory Tracking"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789013",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789003",
+      "text": "Role-based Dashboard"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789014",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789003",
+      "text": "Email Reports"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789015",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789003",
+      "text": "Cloud Database"
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789011",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "question": "Can you customize existing ERPs?",
+      "answer": "Yes, we can customize and extend platforms like Odoo, SAP, or build from scratch."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789012",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "question": "Is the data secure?",
+      "answer": "We implement enterprise-grade encryption and multi-factor authentication."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789013",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "question": "Does it support offline use?",
+      "answer": "Yes, we can build sync-ready desktop applications for offline capabilities."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789014",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "question": "Do you provide staff training?",
+      "answer": "Yes, on-site and remote training sessions are included in our delivery."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789015",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "question": "Is there a recurring fee?",
+      "answer": "Unless you opt for a SaaS model, you own the perpetual license for custom builds."
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789011",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Software Binaries"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789012",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "DB Migration Scripts"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789013",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Operations Manual"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789014",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Integration APIs"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789015",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "SLA Agreement"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789011",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Defined Business Process"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789012",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Dedicated IT POC"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789013",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Server Infrastructure"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789014",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Valid Software Licenses"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789015",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440003",
+      "text": "Data Security Policy"
+    }
+  }
+,
+  {
+    "model": "cms.subservice",
+    "pk": "777e8400-e29b-41d4-a716-446655440004",
+    "fields": {
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z",
+      "is_deleted": false,
+      "parent_service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "title": "Cloud Hosting & DevOps",
+      "slug": "cloud-hosting-devops",
+      "tagline": "Scalable Infrastructure & CI/CD",
+      "description": "Enterprise-grade cloud setups starting from SAR 99/month.",
+      "long_description": "We manage your cloud infrastructure on AWS, Azure, and GCP, implementing DevOps best practices for seamless deployment and 99.9% uptime.",
+      "hero_image": null,
+      "starting_price": 99.0,
+      "offer_badge": "",
+      "timeline": "Ongoing",
+      "team_lead": null,
+      "status": "draft",
+      "sort_order": 3,
+      "meta_title": "Cloud Hosting & DevOps | AWS, Azure, GCP Experts",
+      "meta_description": "Optimize your cloud infrastructure with our DevOps and server management services starting from SAR 99.",
+      "meta_keywords": "cloud hosting, devops, aws, azure, docker, kubernetes",
+      "focus_keyword": "cloud hosting and devops",
+      "og_title": null,
+      "og_image": null,
+      "canonical_url": null,
+      "schema_markup": null,
+      "priority": 0
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789016",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "99.9% Server Uptime"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789017",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Automated Backup Systems"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789018",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Faster Deployment Cycles"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789019",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Enhanced Security Protocols"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789020",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Cost-Efficient Auto-scaling"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789016",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Cloud Provider Credentials"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789017",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Architecture Diagrams"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789018",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Current Server Access"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789019",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Deployment Policy"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789020",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "IAM User Requirements"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstep",
+    "pk": "44a2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "step_number": 1,
+      "title": "Cloud Assessment",
+      "description": "Evaluating existing load and choosing the right tier.",
+      "timeline": "3 Days"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789007",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789008",
+      "text": "Infrastructure Audit"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789008",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789008",
+      "text": "Resource Usage Log"
+    }
+  },
+  {
+    "model": "cms.subservicepricetier",
+    "pk": "55a2b3c4-d5e6-4789-8b90-123456789004",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "name": "Cloud Basic",
+      "price": "99.00",
+      "description": "Essential hosting for small apps.",
+      "is_popular": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789016",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789004",
+      "text": "2GB RAM Server"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789017",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789004",
+      "text": "SSD Storage"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789018",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789004",
+      "text": "Daily Backups"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789019",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789004",
+      "text": "SSL Setup"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789020",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789004",
+      "text": "Control Panel Access"
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789016",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "question": "Which cloud providers do you support?",
+      "answer": "We support AWS, Google Cloud Platform (GCP), and Microsoft Azure."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789017",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "question": "What is DevOps implementation?",
+      "answer": "It involves automating your software build, testing, and deployment pipeline for faster releases."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789018",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "question": "Do you offer disaster recovery?",
+      "answer": "Yes, we set up redundant systems and automated backups to ensure data safety."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789019",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "question": "Is security monitoring included?",
+      "answer": "Yes, we provide 24/7 server monitoring and firewall management."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789020",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "question": "Can you help migrate our current server?",
+      "answer": "Yes, we provide migration services with zero downtime for most applications."
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789016",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Configured Server Instance"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789017",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "CI/CD Pipeline Scripts"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789018",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "SSH Key Access"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789019",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Security Audit Report"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789020",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Infrastructure as Code (IaC) Files"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789016",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Active Billing Account"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789017",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Project Deployment Permissions"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789018",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Technical Stack Compliance"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789019",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Clear Resource Requirements"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789020",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440004",
+      "text": "Authorized DevOps POC"
+    }
+  },
+  {
+    "model": "cms.subservice",
+    "pk": "777e8400-e29b-41d4-a716-446655440005",
+    "fields": {
+      "created_at": "2026-01-01T10:00:00Z",
+      "updated_at": "2026-01-01T10:00:00Z",
+      "is_deleted": false,
+      "parent_service": "a1b2c3d4-e5f6-4789-8b90-123456789000",
+      "title": "IT Consulting & Support",
+      "slug": "it-consulting-support",
+      "tagline": "Expert Technology Guidance",
+      "description": "Professional IT consulting and maintenance services starting from SAR 99.",
+      "long_description": "We provide strategic IT consulting, system integration, and ongoing maintenance to ensure your business technology remains reliable and modern.",
+      "hero_image": null,
+      "starting_price": 99.0,
+      "offer_badge": "",
+      "timeline": "As needed",
+      "team_lead": null,
+      "status": "draft",
+      "sort_order": 4,
+      "meta_title": "IT Consulting & Support | UAE Business Tech",
+      "meta_description": "Strategic technology consulting and system integration services starting from SAR 99.",
+      "meta_keywords": "it consulting, system integration, tech support, business optimization",
+      "focus_keyword": "it consulting and support",
+      "og_title": null,
+      "og_image": null,
+      "canonical_url": null,
+      "schema_markup": null,
+      "priority": 0
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789021",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Reduced Technical Downtime"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789022",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Cost-Effective Tech Roadmap"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789023",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Modern Infrastructure Audits"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789024",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Seamless System Integration"
+    }
+  },
+  {
+    "model": "cms.subservicebenefit",
+    "pk": "22a2b3c4-d5e6-4789-8b90-123456789025",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Priority Helpdesk Access"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789021",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Inventory List of Assets"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789022",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Existing Support Logs"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789023",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Network Topology Map"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789024",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Current Vendor Contracts"
+    }
+  },
+  {
+    "model": "cms.subservicedocument",
+    "pk": "33a2b3c4-d5e6-4789-8b90-123456789025",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Authorized Admin List"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstep",
+    "pk": "44a2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "step_number": 1,
+      "title": "Discovery & Audit",
+      "description": "Evaluating existing tech stack and pain points.",
+      "timeline": "1 Week"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789009",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789009",
+      "text": "Consultation Brief"
+    }
+  },
+  {
+    "model": "cms.subserviceprocessstepdocument",
+    "pk": "44b2b3c4-d5e6-4789-8b90-123456789010",
+    "fields": {
+      "process_step": "44a2b3c4-d5e6-4789-8b90-123456789009",
+      "text": "Current State Analysis"
+    }
+  },
+  {
+    "model": "cms.subservicepricetier",
+    "pk": "55a2b3c4-d5e6-4789-8b90-123456789005",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "name": "Consultant On-call",
+      "price": "99.00",
+      "description": "Per hour expert consulting.",
+      "is_popular": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789021",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789005",
+      "text": "Video Call Sessions"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789022",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789005",
+      "text": "Actionable Roadmap"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789023",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789005",
+      "text": "Tech Stack Advice"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789024",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789005",
+      "text": "Software Recommendation"
+    }
+  },
+  {
+    "model": "cms.subservicepricetierfeature",
+    "pk": "55b2b3c4-d5e6-4789-8b90-123456789025",
+    "fields": {
+      "price_tier": "55a2b3c4-d5e6-4789-8b90-123456789005",
+      "text": "Follow-up Report"
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789021",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "question": "Do you provide on-site support?",
+      "answer": "Yes, we offer both remote and on-site IT support across the UAE."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789022",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "question": "Can you help with digital transformation strategy?",
+      "answer": "Yes, we create long-term roadmaps to modernize your business technology."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789023",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "question": "Do you offer emergency 24/7 support?",
+      "answer": "Yes, we have priority support packages for mission-critical IT needs."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789024",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "question": "Are you affiliated with specific software vendors?",
+      "answer": "We are vendor-neutral and recommend solutions that best fit your budget and needs."
+    }
+  },
+  {
+    "model": "cms.subservicefaq",
+    "pk": "66a2b3c4-d5e6-4789-8b90-123456789025",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "question": "How do you charge for consulting?",
+      "answer": "We offer both hourly rates and project-based flat fees."
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789021",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Technology Audit Report"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789022",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Strategic IT Roadmap"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789023",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Vendor Comparison List"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789024",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "System Architecture Doc"
+    }
+  },
+  {
+    "model": "cms.subservicedeliverable",
+    "pk": "88a2b3c4-d5e6-4789-8b90-123456789025",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Support Log Access"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789021",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Active Business Presence"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789022",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Willingness for Tech Audit"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789023",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Access to Current Systems"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789024",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Designated Project Sponsor"
+    }
+  },
+  {
+    "model": "cms.subserviceeligibility",
+    "pk": "99a2b3c4-d5e6-4789-8b90-123456789025",
+    "fields": {
+      "sub_service": "777e8400-e29b-41d4-a716-446655440005",
+      "text": "Clear Business Objectives"
+    }
+  }
+]

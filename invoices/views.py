@@ -84,7 +84,7 @@ def invoice_status(request, pk):
 def _invoice_context(inv):
     """Build context for invoice email/print template."""
     company = {
-        "name": getattr(django_settings, "COMPANY_NAME", "Al Awamer Al Sareeah"),
+        "name": getattr(django_settings, "COMPANY_NAME", "Pivot Travels & Tourism"),
         "tagline": getattr(django_settings, "COMPANY_TAGLINE", "UAE Business Setup & Visa Services"),
         "email": getattr(django_settings, "COMPANY_EMAIL", ""),
         "phone": getattr(django_settings, "COMPANY_PHONE", ""),
@@ -127,7 +127,7 @@ def invoice_send_email(request, pk):
     text_body = (
         f"Hello {inv.client_name},\n\n"
         f"Please find your {inv.get_type_display().lower()} {inv.invoice_number} below.\n\n"
-        f"Total: {inv.total} AED\n\n"
+        f"Total: {inv.total} SAR\n\n"
         f"Best regards,\n{company['name']}"
     )
     subject = f"{inv.get_type_display()}: {inv.invoice_number}"

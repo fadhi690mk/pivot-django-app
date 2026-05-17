@@ -126,7 +126,7 @@ EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
 DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL", default=EMAIL_HOST_USER or "noreply@example.com")
 
 # Company (for email templates, PDF footer, etc.)
-COMPANY_NAME = config("COMPANY_NAME", default="Al Awamer Al Sareeah")
+COMPANY_NAME = config("COMPANY_NAME", default="Pivot Travels & Tourism")
 COMPANY_TAGLINE = config("COMPANY_TAGLINE", default="UAE Business Setup & Visa Services")
 COMPANY_EMAIL = config("COMPANY_EMAIL", default="")
 COMPANY_PHONE = config("COMPANY_PHONE", default="")
