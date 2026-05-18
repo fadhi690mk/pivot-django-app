@@ -34,7 +34,7 @@ def send_queued_mail(self, to_email: str, subject: str, body_text: str, body_htm
     from_email = from_email or getattr(settings, "DEFAULT_FROM_EMAIL", "noreply@example.com")
     to_list = [e.strip() for e in (to_email or "").split(",") if e.strip()]
     if not to_list:
-        logger.warning("send_queued_mail: no recipient")
+        print("send_queued_mail: no recipient")
         return
     try:
         r = _get_redis()
@@ -50,9 +50,9 @@ def send_queued_mail(self, to_email: str, subject: str, body_text: str, body_htm
                 msg.attach_alternative(body_html, "text/html")
             msg.send(fail_silently=False)
             r.set(REDIS_KEY_LAST_SEND, time.time())
-        logger.info("Queued email sent to %s: %s", to_list[0], subject[:50])
+        print("Queued email sent to %s: %s", to_list[0], subject[:50])
     except Exception as e:
-        logger.warning("send_queued_mail failed: %s", e)
+        print("send_queued_mail failed: %s", e)
         raise self.retry(exc=e, countdown=60)
 
 
