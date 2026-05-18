@@ -1,0 +1,532 @@
+[
+  {
+    "model": "accounts.feature",
+    "pk": "851a5d92-9f3a-5c88-809b-23e5c659445a",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "leads.view",
+      "description": "View Leads"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "e7abed1c-0c75-59b7-9eb6-2280c1de2763",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "leads.create",
+      "description": "Create Leads"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "bb10c3b9-44bb-5d7f-af3d-1b0262b5ac7a",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "leads.edit",
+      "description": "Edit Leads"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "7c1f89c7-ca79-5ef0-b04d-8aa0da8e9a5f",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "leads.delete",
+      "description": "Delete Leads"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "24f181d9-1fb4-51cf-aa2e-05f8cb5d8f1a",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "leads.assign",
+      "description": "Assign Leads"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "403cf363-be6d-5e16-aace-adf4eb0c7eb3",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.blog.view",
+      "description": "View Blog"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "8decf6be-cc30-5f5c-ac42-f9d8d3afc8f5",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.blog.create",
+      "description": "Create Blog"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "be416f67-9218-56f2-8cfe-ce9739f58203",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.blog.edit",
+      "description": "Edit Blog"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "5b550dee-f615-5bbf-8b96-ba7fd8ff6288",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.blog.publish",
+      "description": "Publish Blog"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "60b02d37-80d6-5866-bce4-8ac87463a09c",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.blog.delete",
+      "description": "Delete Blog"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "b050929b-bce2-53dc-9920-ac9bbad392e0",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.services.view",
+      "description": "View Services"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "6f5f2b42-9464-51ef-8a79-30b961afc0c7",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.services.edit",
+      "description": "Edit Services"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "c4e54012-0fd7-5768-82a4-083863aeffa7",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.services.publish",
+      "description": "Publish Services"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "61e509a4-c28f-5a71-8afd-f9de61109e55",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.hero.edit",
+      "description": "Edit Hero"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "810e499b-d4c9-5261-bc29-a40e2fae36a9",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.team.edit",
+      "description": "Edit Team"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "ed5631f3-5200-5d9b-9536-8e828790f590",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.clients.edit",
+      "description": "Edit Clients"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "fd26bb82-dbd4-52fc-ab40-ff1a45c459fb",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.testimonials.edit",
+      "description": "Edit Testimonials"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "3ca6ddeb-00b6-57fb-b432-44a59e39f242",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.news.edit",
+      "description": "Edit News"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "60e1e5bf-a44b-52c4-91d4-87ce8ed03b24",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.faq.edit",
+      "description": "Edit FAQs"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "f9ddb94f-a4b8-5137-a8bc-e85ec44156e0",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.pages.edit",
+      "description": "Edit Pages"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "54b94179-9123-5292-965d-801ea15f0c57",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "config.calculator",
+      "description": "Manage Calculator"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "b651f51b-209c-59d9-bfa4-74c7902ede2a",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "config.search",
+      "description": "Manage Search"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "9b0b2cb8-50a1-5b72-9e56-4ad1752e56e0",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "config.roles",
+      "description": "Manage Roles"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "bc956f8b-2d35-5c16-8a73-4050f24ca32a",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "invoices.view",
+      "description": "View Invoices"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "4dda25f6-4037-5481-8d17-8dbee27bd1c0",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "invoices.create",
+      "description": "Create Invoices"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "f32e6db8-8b61-5d5d-925b-ebbfa8e215dc",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "invoices.edit",
+      "description": "Edit Invoices"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "f510683c-7f05-53f4-84af-91e0cf67297b",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "invoices.delete",
+      "description": "Delete Invoices"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "c3c74036-db32-5934-91e4-044a04ffa231",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "audit.view",
+      "description": "View Audit Log"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "f5ab1d92-2d04-5678-892c-2291aebe17a3",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "settings.manage",
+      "description": "Manage Settings"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "ff3ea1ff-216a-5eda-8ab7-eca482ae8d81",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.formations.view",
+      "description": "View Formations"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "d915d064-5312-560b-8d0e-7f145540e56f",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.formations.create",
+      "description": "Create Formations"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "a38675f2-f5c1-5305-aeb1-75305c1091d2",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.formations.edit",
+      "description": "Edit Formations"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "ed3da601-1e47-54eb-907e-99b79574b8a4",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.formations.publish",
+      "description": "Publish Formations"
+    }
+  },
+  {
+    "model": "accounts.feature",
+    "pk": "870ada9b-b53e-5314-a13b-b1eba8b7d19e",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "cms.formations.delete",
+      "description": "Delete Formations"
+    }
+  },
+  {
+    "model": "accounts.userrole",
+    "pk": "9bb2e51f-4205-565c-bb8c-0a7e7b50f812",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "Admin",
+      "description": "Full access to all features",
+      "features": [
+        "851a5d92-9f3a-5c88-809b-23e5c659445a",
+        "e7abed1c-0c75-59b7-9eb6-2280c1de2763",
+        "bb10c3b9-44bb-5d7f-af3d-1b0262b5ac7a",
+        "7c1f89c7-ca79-5ef0-b04d-8aa0da8e9a5f",
+        "24f181d9-1fb4-51cf-aa2e-05f8cb5d8f1a",
+        "403cf363-be6d-5e16-aace-adf4eb0c7eb3",
+        "8decf6be-cc30-5f5c-ac42-f9d8d3afc8f5",
+        "be416f67-9218-56f2-8cfe-ce9739f58203",
+        "5b550dee-f615-5bbf-8b96-ba7fd8ff6288",
+        "60b02d37-80d6-5866-bce4-8ac87463a09c",
+        "b050929b-bce2-53dc-9920-ac9bbad392e0",
+        "6f5f2b42-9464-51ef-8a79-30b961afc0c7",
+        "c4e54012-0fd7-5768-82a4-083863aeffa7",
+        "61e509a4-c28f-5a71-8afd-f9de61109e55",
+        "810e499b-d4c9-5261-bc29-a40e2fae36a9",
+        "ed5631f3-5200-5d9b-9536-8e828790f590",
+        "fd26bb82-dbd4-52fc-ab40-ff1a45c459fb",
+        "3ca6ddeb-00b6-57fb-b432-44a59e39f242",
+        "60e1e5bf-a44b-52c4-91d4-87ce8ed03b24",
+        "f9ddb94f-a4b8-5137-a8bc-e85ec44156e0",
+        "54b94179-9123-5292-965d-801ea15f0c57",
+        "b651f51b-209c-59d9-bfa4-74c7902ede2a",
+        "9b0b2cb8-50a1-5b72-9e56-4ad1752e56e0",
+        "bc956f8b-2d35-5c16-8a73-4050f24ca32a",
+        "4dda25f6-4037-5481-8d17-8dbee27bd1c0",
+        "f32e6db8-8b61-5d5d-925b-ebbfa8e215dc",
+        "f510683c-7f05-53f4-84af-91e0cf67297b",
+        "c3c74036-db32-5934-91e4-044a04ffa231",
+        "f5ab1d92-2d04-5678-892c-2291aebe17a3",
+        "ff3ea1ff-216a-5eda-8ab7-eca482ae8d81",
+        "d915d064-5312-560b-8d0e-7f145540e56f",
+        "a38675f2-f5c1-5305-aeb1-75305c1091d2",
+        "ed3da601-1e47-54eb-907e-99b79574b8a4",
+        "870ada9b-b53e-5314-a13b-b1eba8b7d19e"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userrole",
+    "pk": "437ee19c-6ebe-502f-9068-55e0be2b2ef3",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "Sales Manager",
+      "description": "Lead management and pipeline access",
+      "features": [
+        "851a5d92-9f3a-5c88-809b-23e5c659445a",
+        "e7abed1c-0c75-59b7-9eb6-2280c1de2763",
+        "bb10c3b9-44bb-5d7f-af3d-1b0262b5ac7a",
+        "24f181d9-1fb4-51cf-aa2e-05f8cb5d8f1a",
+        "403cf363-be6d-5e16-aace-adf4eb0c7eb3",
+        "bc956f8b-2d35-5c16-8a73-4050f24ca32a",
+        "4dda25f6-4037-5481-8d17-8dbee27bd1c0"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userrole",
+    "pk": "8aecd237-09ea-5f83-91db-718ba2346e2d",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "Sales Rep",
+      "description": "View and manage assigned leads",
+      "features": [
+        "851a5d92-9f3a-5c88-809b-23e5c659445a",
+        "e7abed1c-0c75-59b7-9eb6-2280c1de2763",
+        "bb10c3b9-44bb-5d7f-af3d-1b0262b5ac7a",
+        "bc956f8b-2d35-5c16-8a73-4050f24ca32a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userrole",
+    "pk": "1e8b241e-50cf-5918-9a4f-fe3db7edf0f5",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "Content Editor",
+      "description": "Manage blog, news, and content",
+      "features": [
+        "403cf363-be6d-5e16-aace-adf4eb0c7eb3",
+        "8decf6be-cc30-5f5c-ac42-f9d8d3afc8f5",
+        "be416f67-9218-56f2-8cfe-ce9739f58203",
+        "5b550dee-f615-5bbf-8b96-ba7fd8ff6288",
+        "3ca6ddeb-00b6-57fb-b432-44a59e39f242",
+        "60e1e5bf-a44b-52c4-91d4-87ce8ed03b24"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userrole",
+    "pk": "96d94775-013c-5edc-8fce-360be3c46ba8",
+    "fields": {
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "is_deleted": false,
+      "name": "Viewer",
+      "description": "Read-only access to dashboard and leads",
+      "features": [
+        "851a5d92-9f3a-5c88-809b-23e5c659445a",
+        "403cf363-be6d-5e16-aace-adf4eb0c7eb3",
+        "b050929b-bce2-53dc-9920-ac9bbad392e0",
+        "c3c74036-db32-5934-91e4-044a04ffa231"
+      ]
+    }
+  },
+  {
+    "model": "accounts.hubuser",
+    "pk": "11111111-1111-4111-8111-111111111111",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$juEmt4Cq0aAsOFa4RMKpCA$LTk2GzWI9kAoRfv319ufrcsNotBou250XEVW/DfXKOI=",
+      "last_login": null,
+      "is_superuser": true,
+      "email": "admin@pivot-travels.com",
+      "name": "Pivot Admin",
+      "avatar": "PA",
+      "role": "9bb2e51f-4205-565c-bb8c-0a7e7b50f812",
+      "is_active": true,
+      "is_staff": true,
+      "is_deleted": false,
+      "created_at": "2026-05-17T12:00:00.000Z",
+      "updated_at": "2026-05-17T12:00:00.000Z",
+      "job_title": "Administrator",
+      "department": "admin",
+      "bio": "",
+      "image": "",
+      "phone": "",
+      "show_on_website": false,
+      "sort_order": 0,
+      "meta_title": "",
+      "meta_description": "",
+      "meta_keywords": "",
+      "focus_keyword": null,
+      "og_title": null,
+      "og_image": "",
+      "groups": [],
+      "user_permissions": [],
+      "roles": [
+        "9bb2e51f-4205-565c-bb8c-0a7e7b50f812"
+      ]
+    }
+  }
+]
